@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aksesorisku - Gantungan Kunci Macrame Aesthetic</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Poppins & Playfair Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        pastelYellow: '#FFF5BA',
+                        pastelYellowHover: '#FFEC94',
+                        pastelPink: '#FFD6E0',
+                        pastelPinkDark: '#F7A8B8',
+                        pastelBlue: '#CCE5FF',
+                        pastelBlueDark: '#99C2FF',
+                        pastelPurple: '#E8D7FF',
+                        pastelPurpleDark: '#C199FF',
+                        pastelSoftWhite: '#FAF9F6',
+                        pastelText: '#4A4A4A',
+                        pastelTextLight: '#717171'
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-pastel-bg {
+            background: linear-gradient(135deg, #FFF5BA 0%, #FFD6E0 35%, #E8D7FF 70%, #CCE5FF 100%);
+        }
+        .soft-card-shadow {
+            box-shadow: 0 10px 25px -5px rgba(232, 215, 255, 0.5), 0 8px 10px -6px rgba(255, 214, 224, 0.4);
+        }
+        .soft-card-shadow:hover {
+            box-shadow: 0 20px 30px -10px rgba(193, 153, 255, 0.4), 0 10px 15px -5px rgba(255, 168, 184, 0.4);
+        }
+    </style>
+</head>
+<body class="bg-pastelSoftWhite text-pastelText font-sans antialiased min-h-screen flex flex-col justify-between">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-40 bg-white/80 backdrop-blur-md shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center space-x-2 group">
+                <span class="w-10 h-10 rounded-full bg-pastelPink flex items-center justify-center text-pastelText font-bold text-xl shadow-inner group-hover:rotate-12 transition-transform">
+                    ✨
+                </span>
+                <span class="font-serif text-2xl md:text-3xl font-bold tracking-wide bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 bg-clip-text text-transparent">
+                    Aksesorisku
+                </span>
+            </a>
+            
+            <nav class="hidden md:flex items-center space-x-8 font-medium text-sm">
+                <a href="#hero" class="hover:text-pink-500 transition-colors">Beranda</a>
+                <a href="#kegunaan" class="hover:text-pink-500 transition-colors">Manfaat</a>
+                <a href="#katalog" class="hover:text-pink-500 transition-colors">Pilihan Model</a>
+                <a href="#kontak" class="hover:text-pink-500 transition-colors">Kontak</a>
+            </nav>
+
+            <button onclick="openModal()" class="bg-pastelPink hover:bg-pastelPinkDark text-pastelText font-semibold px-5 py-2.5 rounded-full shadow-sm transition-all duration-300 transform hover:-translate-y-0.5 active:translate-y-0 flex items-center space-x-2">
+                <i class="fa-solid me-1 fa-bag-shopping"></i>
+                <span>Pesan Sekarang</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section id="hero" class="relative overflow-hidden pt-8 pb-16 md:py-24 gradient-pastel-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6 text-center md:text-left">
+                    <span class="inline-block bg-white/80 text-purple-700 text-xs font-semibold px-4 py-1.5 rounded-full uppercase tracking-wider shadow-sm">
+                        🌸 Gantungan Kunci Handmade Macrame
+                    </span>
+                    <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-800 leading-tight">
+                        Sentuhan Soft Pastel untuk Aksesoris Impianmu
+                    </h1>
+                    <p class="text-pastelTextLight text-base sm:text-lg max-w-lg mx-auto md:mx-0">
+                        Buat penampilan harianmu semakin aesthetic dengan gantungan kunci macrame custom berwarna kuning soft, pink, biru, putih, dan ungu muda.
+                    </p>
+                    <div class="pt-2 flex flex-col sm:flex-row justify-center md:justify-start gap-4">
+                        <a href="#katalog" class="bg-white hover:bg-gray-50 text-purple-700 font-semibold px-8 py-3.5 rounded-full shadow-md text-center transition-all transform hover:-translate-y-0.5">
+                            Lihat Katalog Model
+                        </a>
+                        <button onclick="openModal()" class="bg-purple-600 hover:bg-purple-700 text-white font-semibold px-8 py-3.5 rounded-full shadow-md transition-all transform hover:-translate-y-0.5">
+                            Pesan Langsung
+                        </button>
+                    </div>
+                </div>
+
+                <div class="relative flex justify-center">
+                    <div class="relative w-72 h-72 sm:w-96 sm:h-96 rounded-3xl overflow-hidden shadow-2xl border-4 border-white/60 transform rotate-2 hover:rotate-0 transition-transform duration-500">
+                        <svg viewBox="0 0 400 400" class="w-full h-full object-cover">
+                            <!-- Background SVG Palette -->
+                            <rect width="400" height="400" fill="#FAF9F6"/>
+                            <circle cx="200" cy="200" r="160" fill="#FFD6E0" opacity="0.6"/>
+                            <circle cx="280" cy="120" r="90" fill="#FFF5BA" opacity="0.8"/>
+                            <circle cx="120" cy="280" r="100" fill="#E8D7FF" opacity="0.7"/>
+                            
+                            <!-- Illustration of Macrame Keychain -->
+                            <!-- Ring -->
+                            <circle cx="200" cy="80" r="22" stroke="#D4AF37" stroke-width="8" fill="none"/>
+                            <rect x="194" y="98" width="12" height="20" fill="#D4AF37" rx="2"/>
+                            
+                            <!-- Macrame Knots Pink & Yellow & Purple -->
+                            <path d="M180,118 Q200,135 220,118 Q235,150 200,170 Q165,150 180,118 Z" fill="#F7A8B8"/>
+                            <path d="M185,160 Q200,180 215,160 Q228,195 200,215 Q172,195 185,160 Z" fill="#FFEC94"/>
+                            <path d="M188,205 Q200,225 212,205 Q222,235 200,250 Q178,235 188,205 Z" fill="#C199FF"/>
+                            
+                            <!-- Beads with Initial "A" -->
+                            <circle cx="200" cy="270" r="14" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="2"/>
+                            <text x="200" y="275" font-family="Poppins" font-weight="bold" font-size="14" fill="#4A4A4A" text-anchor="middle">A</text>
+                            
+                            <!-- Fringe/Tassel -->
+                            <path d="M185,285 L170,360 M192,285 L185,365 M200,285 L200,370 M208,285 L215,365 M215,285 L230,360" stroke="#FFF5BA" stroke-width="5" stroke-linecap="round"/>
+                            <path d="M188,285 L178,355 M196,285 L192,360 M204,285 L208,360 M212,285 L222,355" stroke="#FFD6E0" stroke-width="4" stroke-linecap="round"/>
+                            <path d="M190,285 L182,350 M200,285 L200,355 M210,285 L218,350" stroke="#C199FF" stroke-width="3" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kegunaan Produk -->
+    <section id="kegunaan" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-gray-800">
+                    Kenapa Harus Punya Aksesorisku?
+                </h2>
+                <div class="w-20 h-1 bg-pastelPink rounded-full mx-auto mt-3"></div>
+                <p class="text-pastelTextLight mt-3">
+                    Bukan sekadar gantung kunci biasa, aksesoris macrame ini punya beragam kegunaan aesthetic!
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+                <!-- Item 1 -->
+                <div class="bg-pastelPink/30 hover:bg-pastelPink/60 p-6 rounded-2xl text-center transition-all duration-300 transform hover:-translate-y-2 border border-pastelPink/40">
+                    <div class="w-14 h-14 bg-white rounded-2xl mx-auto flex items-center justify-center text-pink-500 text-2xl shadow-sm mb-4">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-800 mb-1">1. Tas Makin Aesthetic</h3>
+                    <p class="text-xs text-pastelTextLight">Memberikan aksen warna soft yang lucu & chic pada tas favoritmu.</p>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="bg-pastelYellow/40 hover:bg-pastelYellow/80 p-6 rounded-2xl text-center transition-all duration-300 transform hover:-translate-y-2 border border-pastelYellow/60">
+                    <div class="w-14 h-14 bg-white rounded-2xl mx-auto flex items-center justify-center text-amber-500 text-2xl shadow-sm mb-4">
+                        <i class="fa-solid fa-bottle-water"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-800 mb-1">2. Tumbler Tidak Pasaran</h3>
+                    <p class="text-xs text-pastelTextLight">Bikin botol minum kamu beda dari yang lain dan mudah dikenali.</p>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="bg-pastelBlue/40 hover:bg-pastelBlue/80 p-6 rounded-2xl text-center transition-all duration-300 transform hover:-translate-y-2 border border-pastelBlue/60">
+                    <div class="w-14 h-14 bg-white rounded-2xl mx-auto flex items-center justify-center text-blue-500 text-2xl shadow-sm mb-4">
+                        <i class="fa-solid fa-wallet"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-800 mb-1">3. Dompet & Pouch Menarik</h3>
+                    <p class="text-xs text-pastelTextLight">Mempercantik retsleting pouch makeup atau dompet harianmu.</p>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="bg-pastelPurple/40 hover:bg-pastelPurple/80 p-6 rounded-2xl text-center transition-all duration-300 transform hover:-translate-y-2 border border-pastelPurple/60">
+                    <div class="w-14 h-14 bg-white rounded-2xl mx-auto flex items-center justify-center text-purple-500 text-2xl shadow-sm mb-4">
+                        <i class="fa-solid fa-key"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-800 mb-1">4. Solusi Kunci Anti Hilang</h3>
+                    <p class="text-xs text-pastelTextLight">Ukurannya pas dan warnanya mencolok soft, mudah ditemukan di dalam tas.</p>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="bg-emerald-50 hover:bg-emerald-100 p-6 rounded-2xl text-center transition-all duration-300 transform hover:-translate-y-2 border border-emerald-200">
+                    <div class="w-14 h-14 bg-white rounded-2xl mx-auto flex items-center justify-center text-emerald-500 text-2xl shadow-sm mb-4">
+                        <i class="fa-solid fa-gift"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-800 mb-1">5. Souvenir Bermanfaat</h3>
+                    <p class="text-xs text-pastelTextLight">Kado & souvenir manis, handmade berkualitas tinggi untuk orang tersayang.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Katalog Model Keychain -->
+    <section id="katalog" class="py-16 bg-pastelSoftWhite">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-gray-800">
+                    Pilihan Model Macrame
+                </h2>
+                <div class="w-20 h-1 bg-pastelPurpleDark rounded-full mx-auto mt-3"></div>
+                <p class="text-pastelTextLight mt-3">
+                    Pilih model favoritmu dengan paduan warna soft pastel: kuning, pink, biru, putih, dan ungu muda.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Model 1: Polos -->
+                <div class="bg-white rounded-3xl overflow-hidden border border-gray-100 soft-card-shadow transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="relative h-64 bg-gradient-to-br from-pastelYellow to-pastelPink flex items-center justify-center p-6">
+                            <span class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm text-xs font-semibold px-3 py-1 rounded-full text-pink-600 shadow-sm">
+                                Best Value
+                            </span>
+                            <!-- Visual Illustration Model Polos -->
+                            <svg viewBox="0 0 200 200" class="h-48 w-48 drop-shadow-md">
+                                <circle cx="100" cy="30" r="14" stroke="#D4AF37" stroke-width="5" fill="none"/>
+                                <rect x="96" y="42" width="8" height="12" fill="#D4AF37" rx="1"/>
+                                <!-- Knots -->
+                                <path d="M85,54 Q100,68 115,54 Q125,80 100,95 Q75,80 85,54 Z" fill="#F7A8B8"/>
+                                <path d="M88,88 Q100,102 112,88 Q120,112 100,125 Q80,112 88,88 Z" fill="#FFEC94"/>
+                                <path d="M90,118 Q100,130 110,118 Q118,138 100,150 Q82,138 90,118 Z" fill="#C199FF"/>
+                                <!-- Fringe -->
+                                <path d="M88,150 L78,190 M94,150 L90,195 M100,150 L100,198 M106,150 L110,195 M112,150 L122,190" stroke="#FFF" stroke-width="3" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-serif text-2xl font-bold text-gray-800">1. Keychain Polos</h3>
+                            <p class="text-sm text-pastelTextLight mt-2 leading-relaxed">
+                                Simpel namun tetap aesthetic dengan kepangan tali macrame halus warna-warni soft pastel pilihanmu.
+                            </p>
+                            <div class="mt-4 flex items-baseline justify-between">
+                                <span class="text-xs text-gray-400 font-medium">Harga Produk</span>
+                                <span class="text-2xl font-bold text-purple-700">Rp 10.000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <button onclick="selectVariantAndOpen('Polos')" class="w-full bg-pastelYellow hover:bg-pastelYellowHover text-gray-800 font-semibold py-3 px-4 rounded-xl shadow-sm transition-colors text-center block">
+                            Pesan Model Polos
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Model 2: Custom Inisial Nama -->
+                <div class="bg-white rounded-3xl overflow-hidden border border-purple-100 soft-card-shadow transition-all duration-300 flex flex-col justify-between transform md:-translate-y-2">
+                    <div>
+                        <div class="relative h-64 bg-gradient-to-br from-pastelPink to-pastelPurple flex items-center justify-center p-6">
+                            <span class="absolute top-4 left-4 bg-purple-600 text-white text-xs font-semibold px-3 py-1 rounded-full shadow-sm">
+                                Popular Choice 🌟
+                            </span>
+                            <!-- Visual Illustration Custom Inisial -->
+                            <svg viewBox="0 0 200 200" class="h-48 w-48 drop-shadow-md">
+                                <circle cx="100" cy="25" r="14" stroke="#D4AF37" stroke-width="5" fill="none"/>
+                                <rect x="96" y="37" width="8" height="10" fill="#D4AF37" rx="1"/>
+                                <!-- Knots -->
+                                <path d="M85,47 Q100,60 115,47 Q125,72 100,85 Q75,72 85,47 Z" fill="#F7A8B8"/>
+                                <path d="M88,78 Q100,90 112,78 Q120,100 100,112 Q80,100 88,78 Z" fill="#C199FF"/>
+                                <!-- Wooden/Acrylic Initial Bead -->
+                                <circle cx="100" cy="128" r="15" fill="#FFFFFF" stroke="#E8D7FF" stroke-width="2"/>
+                                <text x="100" y="133" font-family="Poppins" font-weight="bold" font-size="14" fill="#6B21A8" text-anchor="middle">K</text>
+                                <!-- Fringe -->
+                                <path d="M88,143 L78,188 M94,143 L90,192 M100,143 L100,195 M106,143 L110,192 M112,143 L122,188" stroke="#99C2FF" stroke-width="3" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-serif text-2xl font-bold text-gray-800">2. Custom Inisial Nama</h3>
+                            <p class="text-sm text-pastelTextLight mt-2 leading-relaxed">
+                                Gantungan macrame cantik yang dilengkapi 1 huruf inisial nama membuat keychain-mu makin personal.
+                            </p>
+                            <div class="mt-4 flex items-baseline justify-between">
+                                <span class="text-xs text-gray-400 font-medium">Harga Produk</span>
+                                <span class="text-2xl font-bold text-purple-700">Rp 13.000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <button onclick="selectVariantAndOpen('Custom Inisial Nama')" class="w-full bg-pastelPink hover:bg-pastelPinkDark text-gray-800 font-semibold py-3 px-4 rounded-xl shadow-sm transition-colors text-center block">
+                            Pesan Inisial Nama
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Model 3: Manik-Manik & Custom Nama -->
+                <div class="bg-white rounded-3xl overflow-hidden border border-gray-100 soft-card-shadow transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="relative h-64 bg-gradient-to-br from-pastelPurple to-pastelBlue flex items-center justify-center p-6">
+                            <span class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm text-xs font-semibold px-3 py-1 rounded-full text-indigo-600 shadow-sm">
+                                Full Custom
+                            </span>
+                            <!-- Visual Illustration Manik & Full Name -->
+                            <svg viewBox="0 0 200 200" class="h-48 w-48 drop-shadow-md">
+                                <circle cx="100" cy="20" r="12" stroke="#D4AF37" stroke-width="4" fill="none"/>
+                                <rect x="96" y="30" width="8" height="8" fill="#D4AF37" rx="1"/>
+                                <!-- Knots -->
+                                <path d="M88,38 Q100,50 112,38 Q120,60 100,70 Q80,60 88,38 Z" fill="#F7A8B8"/>
+                                <!-- Beads Array -->
+                                <circle cx="100" cy="80" r="7" fill="#FFF5BA"/>
+                                <rect x="80" y="92" width="10" height="10" rx="2" fill="#FFF" stroke="#DDD"/>
+                                <text x="85" y="100" font-family="Poppins" font-size="8" font-weight="bold" fill="#333">A</text>
+                                <rect x="95" y="92" width="10" height="10" rx="2" fill="#FFF" stroke="#DDD"/>
+                                <text x="100" y="100" font-family="Poppins" font-size="8" font-weight="bold" fill="#333">N</text>
+                                <rect x="110" y="92" width="10" height="10" rx="2" fill="#FFF" stroke="#DDD"/>
+                                <text x="115" y="100" font-family="Poppins" font-size="8" font-weight="bold" fill="#333">I</text>
+                                <circle cx="100" cy="112" r="7" fill="#C199FF"/>
+                                <!-- Fringe -->
+                                <path d="M88,122 L78,180 M94,122 L90,185 M100,122 L100,188 M106,122 L110,185 M112,122 L122,180" stroke="#FFEC94" stroke-width="3" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-serif text-2xl font-bold text-gray-800">3. Manik-Manik & Nama</h3>
+                            <p class="text-sm text-pastelTextLight mt-2 leading-relaxed">
+                                Kombinasi lengkap tali macrame, ronce manik-manik pastel berwarna, serta susunan huruf custom nama.
+                            </p>
+                            <div class="mt-4 flex items-baseline justify-between">
+                                <span class="text-xs text-gray-400 font-medium">Harga Produk</span>
+                                <span class="text-2xl font-bold text-purple-700">Rp 15.000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <button onclick="selectVariantAndOpen('Manik-Manik & Custom Nama')" class="w-full bg-pastelBlue hover:bg-pastelBlueDark text-gray-800 font-semibold py-3 px-4 rounded-xl shadow-sm transition-colors text-center block">
+                            Pesan Manik & Nama
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Form Pemesanan Interactive -->
+    <div id="orderModal" class="fixed inset-0 z-50 hidden bg-black/50 backdrop-blur-sm flex items-center justify-center p-4 overflow-y-auto">
+        <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative my-8 transform transition-all">
+            <!-- Close Button -->
+            <button onclick="closeModal()" class="absolute top-5 right-5 text-gray-400 hover:text-gray-600 bg-gray-100 w-9 h-9 rounded-full flex items-center justify-center transition-colors">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+
+            <div class="mb-6">
+                <h3 class="font-serif text-2xl font-bold text-gray-800">Form Pemesanan</h3>
+                <p class="text-xs text-pastelTextLight">Lengkapi identitas untuk memesan macrame keychain pilihanmu.</p>
+            </div>
+
+            <form id="checkoutForm" onsubmit="handleCheckout(event)" class="space-y-4 text-sm">
+                <!-- Nama Pemesan -->
+                <div>
+                    <label class="block font-medium text-gray-700 mb-1">Nama Pemesan <span class="text-pink-500">*</span></label>
+                    <input type="text" id="custName" required placeholder="Contoh: Budi Santoso" class="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:ring-2 focus:ring-purple-400 focus:border-transparent outline-none transition-all">
+                </div>
+
+                <!-- Nomor Telepon / WA -->
+                <div>
+                    <label class="block font-medium text-gray-700 mb-1">Nomor Telepon / WhatsApp <span class="text-pink-500">*</span></label>
+                    <input type="tel" id="custPhone" required placeholder="Contoh: 08123456789" class="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:ring-2 focus:ring-purple-400 focus:border-transparent outline-none transition-all">
+                </div>
+
+                <!-- Pilih Varian / Model -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block font-medium text-gray-700 mb-1">Pilih Varian Model <span class="text-pink-500">*</span></label>
+                        <select id="variantSelect" onchange="calculateTotal()" class="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:ring-2 focus:ring-purple-400 focus:border-transparent outline-none transition-all bg-white">
+                            <option value="Polos" data-price="10000">Polos (Rp 10.000)</option>
+                            <option value="Custom Inisial Nama" data-price="13000">Custom Inisial (Rp 13.000)</option>
+                            <option value="Manik-Manik & Custom Nama" data-price="15000">Manik & Nama (Rp 15.000)</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block font-medium text-gray-700 mb-1">Jumlah Pesanan <span class="text-pink-500">*</span></label>
+                        <input type="number" id="custQty" min="1" value="1" onchange="calculateTotal()" onkeyup="calculateTotal()" required class="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:ring-2 focus:ring-purple-400 focus:border-transparent outline-none transition-all">
+                    </div>
+                </div>
+
+                <!-- Custom Text / Initial (Conditional Display) -->
+                <div id="customTextContainer" class="hidden">
+                    <label class="block font-medium text-gray-700 mb-1">Inisial / Nama Custom <span class="text-pink-500">*</span></label>
+                    <input type="text" id="custText" placeholder="Contoh: A / 'TIYO'" class="w-full px-4 py-2.5 rounded-xl border border-purple-200 bg-purple-50/30 focus:ring-2 focus:ring-purple-400 outline-none transition-all">
+                    <p class="text-[11px] text-gray-400 mt-0.5">Tuliskan huruf inisial atau nama yang ingin dipasang pada keychain.</p>
+                </div>
+
+                <!-- Alamat Pengiriman -->
+                <div>
+                    <label class="block font-medium text-gray-700 mb-1">Alamat Pengiriman Lengkap <span class="text-pink-500">*</span></label>
+                    <textarea id="custAddress" rows="2" required placeholder="Jl. Mawar No. 12, Kecamatan, Kota, Kode Pos" class="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:ring-2 focus:ring-purple-400 focus:border-transparent outline-none transition-all resize-none"></textarea>
+                </div>
+
+                <!-- Metode Pembayaran -->
+                <div>
+                    <label class="block font-medium text-gray-700 mb-1">Metode Pembayaran <span class="text-pink-500">*</span></label>
+                    <div class="grid grid-cols-2 gap-3">
+                        <label class="border border-gray-200 rounded-xl p-3 flex items-center space-x-2 cursor-pointer hover:border-purple-300 transition-colors">
+                            <input type="radio" name="paymentMethod" value="QRIS" checked class="text-purple-600 focus:ring-purple-400">
+                            <span class="font-medium text-gray-700">QRIS</span>
+                        </label>
+                        <label class="border border-gray-200 rounded-xl p-3 flex items-center space-x-2 cursor-pointer hover:border-purple-300 transition-colors">
+                            <input type="radio" name="paymentMethod" value="COD" class="text-purple-600 focus:ring-purple-400">
+                            <span class="font-medium text-gray-700">COD (Bayar di Tempat)</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Total Tagihan & PO Info -->
+                <div class="bg-gradient-to-r from-pastelPurple/40 to-pastelPink/40 p-4 rounded-2xl border border-purple-100 mt-2">
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <span class="text-xs text-gray-500 block">Total Tagihan</span>
+                            <span id="totalDisplay" class="text-xl font-bold text-purple-700">Rp 10.000</span>
+                        </div>
+                        <span class="text-[11px] bg-white text-purple-700 font-semibold px-3 py-1 rounded-full shadow-sm">
+                            📦 PO 3-5 Hari
+                        </span>
+                    </div>
+                    <p class="text-[11px] text-gray-500 mt-2 italic">
+                        *Catatan: Produk ini dibuat khusus secara handmade (Pre-Order 3-5 hari kerja).
+                    </p>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="w-full bg-emerald-500 hover:bg-emerald-600 text-white font-semibold py-3.5 px-4 rounded-xl shadow-md transition-colors flex items-center justify-center space-x-2 text-base">
+                    <i class="fa-brands fa-whatsapp text-xl"></i>
+                    <span>Kirim Pesanan via WhatsApp</span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer / Kontak -->
+    <footer id="kontak" class="bg-white border-t border-gray-100 pt-12 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <!-- Brand Info -->
+                <div class="space-y-3">
+                    <div class="flex items-center space-x-2">
+                        <span class="w-8 h-8 rounded-full bg-pastelPink flex items-center justify-center text-pastelText font-bold text-sm">✨</span>
+                        <span class="font-serif text-xl font-bold text-gray-800">Aksesorisku</span>
+                    </div>
+                    <p class="text-xs text-pastelTextLight leading-relaxed">
+                        Penyedia gantungan kunci macrame aesthetic buatan tangan berkualitas tinggi. Menghadirkan kreasi tali cantik dalam balutan warna soft pastel favoritmu.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-3 text-sm">Navigasi Cepat</h4>
+                    <ul class="space-y-2 text-xs text-pastelTextLight">
+                        <li><a href="#hero" class="hover:text-purple-600">Beranda</a></li>
+                        <li><a href="#kegunaan" class="hover:text-purple-600">Manfaat Aksesoris</a></li>
+                        <li><a href="#katalog" class="hover:text-purple-600">Katalog Model</a></li>
+                    </ul>
+                </div>
+
+                <!-- Official Contact -->
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-3 text-sm">Hubungi Kami</h4>
+                    <div class="space-y-3 text-xs">
+                        <!-- WhatsApp Link -->
+                        <a href="https://wa.me/6285808363960" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-3 text-gray-700 hover:text-emerald-600 transition-colors group">
+                            <span class="w-8 h-8 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-600 group-hover:bg-emerald-500 group-hover:text-white transition-colors">
+                                <i class="fa-brands fa-whatsapp text-sm"></i>
+                            </span>
+                            <div>
+                                <p class="font-medium">WhatsApp Tiyovyan</p>
+                                <p class="text-pastelTextLight">085808363960</p>
+                            </div>
+                        </a>
+
+                        <!-- Instagram Link -->
+                        <a href="https://instagram.com/tiyovyanp_" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-3 text-gray-700 hover:text-pink-600 transition-colors group">
+                            <span class="w-8 h-8 rounded-full bg-pink-100 flex items-center justify-center text-pink-600 group-hover:bg-pink-500 group-hover:text-white transition-colors">
+                                <i class="fa-brands fa-instagram text-sm"></i>
+                            </span>
+                            <div>
+                                <p class="font-medium">Instagram</p>
+                                <p class="text-pastelTextLight">@tiyovyanp_</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-100 pt-6 text-center text-xs text-gray-400">
+                <p>&copy; 2026 Aksesorisku by Tiyovyan. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Logic Script -->
+    <script>
+        // Prices mapping
+        const prices = {
+            'Polos': 10000,
+            'Custom Inisial Nama': 13000,
+            'Manik-Manik & Custom Nama': 15000
+        };
+
+        // Open order modal
+        function openModal() {
+            document.getElementById('orderModal').classList.remove('hidden');
+            calculateTotal();
+        }
+
+        // Close order modal
+        function closeModal() {
+            document.getElementById('orderModal').classList.add('hidden');
+        }
+
+        // Select specific variant from catalog card
+        function selectVariantAndOpen(variantName) {
+            const selectEl = document.getElementById('variantSelect');
+            selectEl.value = variantName;
+            openModal();
+        }
+
+        // Calculate total price and toggle custom text field
+        function calculateTotal() {
+            const variantSelect = document.getElementById('variantSelect').value;
+            const qtyInput = parseInt(document.getElementById('custQty').value) || 1;
+            const customContainer = document.getElementById('customTextContainer');
+            
+            // Toggle initial/name field display
+            if (variantSelect === 'Custom Inisial Nama' || variantSelect === 'Manik-Manik & Custom Nama') {
+                customContainer.classList.remove('hidden');
+            } else {
+                customContainer.classList.add('hidden');
+            }
+
+            // Calculate total
+            const unitPrice = prices[variantSelect] || 10000;
+            const total = unitPrice * Math.max(1, qtyInput);
+
+            // Format to IDR Currency
+            const formattedTotal = new Intl.NumberFormat('id-ID', {
+                style: 'currency',
+                currency: 'IDR',
+                maximumFractionDigits: 0
+            }).format(total);
+
+            document.getElementById('totalDisplay').textContent = formattedTotal;
+        }
+
+        // Handle checkout form submission & redirect to WhatsApp
+        function handleCheckout(e) {
+            e.preventDefault();
+
+            const name = document.getElementById('custName').value.trim();
+            const phone = document.getElementById('custPhone').value.trim();
+            const variant = document.getElementById('variantSelect').value;
+            const qty = document.getElementById('custQty').value;
+            const customText = document.getElementById('custText').value.trim();
+            const address = document.getElementById('custAddress').value.trim();
+            const payment = document.querySelector('input[name="paymentMethod"]:checked').value;
+            const totalText = document.getElementById('totalDisplay').textContent;
+
+            // Form message for WhatsApp
+            let textMessage = `*HALO AKSESORISKU, SAYA MAU PESAN MACRAME KEYCHAIN!* 🌸\n\n`;
+            textMessage += `📋 *Detail Pemesan:*\n`;
+            textMessage += `• *Nama:* ${name}\n`;
+            textMessage += `• *No. HP:* ${phone}\n`;
+            textMessage += `• *Alamat Pengiriman:* ${address}\n\n`;
+            
+            textMessage += `🛍️ *Detail Pesanan:*\n`;
+            textMessage += `• *Varian Model:* ${variant}\n`;
+            if (variant !== 'Polos' && customText !== '') {
+                textMessage += `• *Custom Inisial / Nama:* ${customText}\n`;
+            }
+            textMessage += `• *Jumlah:* ${qty} pcs\n`;
+            textMessage += `• *Metode Pembayaran:* ${payment}\n`;
+            textMessage += `• *Total Tagihan:* ${totalText}\n`;
+            textMessage += `• *Status:* Pre-Order (PO 3-5 Hari)\n\n`;
+            textMessage += `Mohon diproses ya, terima kasih! ✨`;
+
+            // Encode message for URL
+            const encodedMessage = encodeURIComponent(textMessage);
+            const targetPhone = "6285808363960";
+            const waUrl = `https://wa.me/${targetPhone}?text=${encodedMessage}`;
+
+            // Redirect user to WA
+            window.open(waUrl, '_blank');
+            closeModal();
+        }
+
+        // Close modal when clicking outside modal box
+        window.onclick = function(event) {
+            const modal = document.getElementById('orderModal');
+            if (event.target === modal) {
+                closeModal();
+            }
+        };
+    </script>
+</body>
+</html>
